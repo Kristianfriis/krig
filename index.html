@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Krig</title>
+    <link rel="stylesheet" type="text/CSS" href="normalize.css">
+    <link rel="stylesheet" type="text/CSS" href="styles.css">
+    <script rel="javascript" type="text/javascript" src="cards.js"></script>
+    <script rel="javascript" type="text/javascript" src="logic.js"></script>
+  </head>
+  <body>
+
+      <header>
+      	<div class="">
+          <h1>KRIG</h1>
+        </div>
+      </header>
+
+      <div class="button-cont">
+      	<button onclick="dealer()" id="deal">Deal Cards</button>
+      </div>
+
+      <div class="flex">
+      	<div id="playercards" class="card_cont">
+      		<img id="playercardpic" src ="" class="img_cont">
+      	</div>
+      	<div class="card_cont" id="VS"><h2>VS</h2></div>
+      	<div id="computercards" class="card_cont">
+          <img id="computercardpic" src ="" class="img_cont">
+        </div>
+      </div>
+
+      <div class="button-cont">
+      	<button onclick="tester()" id="KRIG">KRIG</button>
+      </div>
+
+      <div class="flex">
+      	<div class="point_cont">
+          	<h3>Player Score</h3>
+              <h4 id="player_score">0</h4>
+          </div>
+      		<div class="point_cont">
+          	<h3>Computer Score</h3>
+              <h4 id="computer_score">0</h4>
+      </div>
+
+      </div>
+  </body>
+</html>

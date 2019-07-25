@@ -1,0 +1,60 @@
+body {
+  background: #dae4e5;
+  color: #2f3538;
+}
+header {
+  height: 60px;
+  width: 100%;
+  background: #4A586E;
+}
+header h1 {
+  text-align: center;
+  color: white;
+  margin-top: 0px;
+  padding: 10px;
+}
+.button-cont {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+#deal,
+#KRIG {
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0px 10px 5px -4px rgba(0, 0, 0, 0.09);
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.card_cont {
+  height: 320px;
+  width: 240px;
+  margin: 5px;
+  background: #f0f6f4;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+}
+#VS {
+  text-align: center;
+  line-height: 240px;
+}
+#VS h2 {
+  color: #2f3640;
+}
+.point_cont {
+  width: 150px;
+  text-align: center;
+  border: 2px solid #2f3640;
+  border-radius: 5px;
+  margin: 20px;
+}
+.img_cont {
+  margin: 40px;
+}
