@@ -58,3 +58,7 @@ header h1 {
 .img_cont {
   margin: 40px;
 }
+img {
+  max-width: 60%;
+  height: auto;
+}
