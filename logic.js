@@ -13,6 +13,6 @@ function dealer() {
   }
 }
 function tester() {
-  document.getElementById("computercardpic").src = C1.image;
-  document.getElementById("playercardpic").src = C2.image;
+  document.getElementById("computercardpic").src = S1.image;
+  document.getElementById("playercardpic").src = D2.image;
 }
