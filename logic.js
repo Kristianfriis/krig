@@ -1,8 +1,15 @@
 var cards = ["C1","C2","C3","C4","C5","C6","C7","C8","C9","C10","C11","C12","C13","D1","D2","D3","D4","D5","D6","D7","D8","D9","D10","D11","D12","D13","H1","H2","H3","H4","H5","H6","H7","H8","H9","H10","H11","H12","H13","S1","S2","S3","S4","S5","S6","S7","S8","S9","S10","S11","S12","S13"];
 var player = [];
 var computer = [];
+//var til at gemme deal knap når der trykkes på den. skal indtil videre stå til false, men når APP køre skla den stå som true.
+var buttonHider = true;
 
+//function der deler cards array op i 2 lige store bunker men blandet. den skjuler også "deal" knap
 function dealer() {
+  if (buttonHider == true){
+    document.getElementById('deal').style.visibility = 'hidden';
+    buttonHider = false;
+  }
   for (var i = 0; i <= 25; i++) {
     var random = Math.floor(Math.random() * cards.length);
     player.push(cards[random]);
@@ -12,7 +19,14 @@ function dealer() {
     cards.splice(random, 1);
   }
 }
-function tester() {
-  document.getElementById("computercardpic").src = S1.image;
-  document.getElementById("playercardpic").src = D2.image;
+
+//variabler til at holde point
+var playerScore = 0;
+var computerScore = 0;
+
+//function der holde værdien af kortene op imod hinanden og assigner point.
+function getCard {
+  var playerCard = player[0];
+  player.splice(0, 1);
+  console.log(player);
 }
