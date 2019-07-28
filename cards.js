@@ -179,7 +179,7 @@ var S4 = {
 }
 var S5 = {
   value: 5,
-  image: "pic/5_of_spadespng"
+  image: "pic/5_of_spades.png"
 }
 var S6 = {
   value: 6,
