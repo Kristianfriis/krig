@@ -11,7 +11,7 @@ function dealer() {
     buttonHider = false;
   }
   for (var i = 0; i <= 25; i++) {
-    var random = Math.floor(Math.random() * cards.length);
+    let random = Math.floor(Math.random() * cards.length);
     player.push(cards[random]);
     cards.splice(random, 1);
     random = Math.floor(Math.random() * cards.length);
@@ -20,13 +20,16 @@ function dealer() {
   }
 }
 
-//variabler til at holde point
-var playerScore = 0;
-var computerScore = 0;
+//variabler til at holde spillernes nye kortene
+var newPlayerCards = [];
+var newComputerCards = [];
 
 //function der holde værdien af kortene op imod hinanden og assigner point.
-function getCard {
+//assigner også de vundne til to nye arrays som så bruges istedet for org. array.
+function getCard() {
   var playerCard = player[0];
-  player.splice(0, 1);
-  console.log(player);
+  var computerCard = computer[0];
+  console.log(typeof(playerCard));
+  document.getElementById('playercardpic').src = C1.image;
+
 }
