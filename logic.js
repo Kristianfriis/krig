@@ -23,7 +23,8 @@ function dealer() {
 //variabler til at holde spillernes nye kortene
 var newPlayerCards = [];
 var newComputerCards = [];
-//function der sætter billeder af kort ind, tager 2 input af spillerkort og computerkort. 
+
+//function der sætter billeder af kort ind, tager 2 input af spillerkort og computerkort.
 function showCard(playerCard, computerCard) {
   document.getElementById('playercardpic').src = playerCard.image;
   document.getElementById('computercardpic').src = computerCard.image;
@@ -33,10 +34,15 @@ function showCard(playerCard, computerCard) {
 function getCard() {
   var playerCard = player[0];
   var computerCard = computer[0];
-  showCard(playerCard, computerCard);
+  compareCards(playerCard, computerCard);
 }
-function compareCards(){
-  if (true) {
-
+function compareCards(playerCard, computerCard){
+  showCard(playerCard, computerCard);
+  if (playerCard == computerCard) {
+    console.log("equal");
+  } else if (playerCard < computerCard) {
+    console.log("player card higher");
+  } else {
+    console.log("computer card higher");
   }
 }

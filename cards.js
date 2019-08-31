@@ -195,7 +195,7 @@ var S8 = {
 }
 var S9 = {
   value: 9,
-  image: "pic/9_of_spadespng"
+  image: "pic/9_of_spades.png"
 }
 var S10 = {
   value: 10,
@@ -203,7 +203,7 @@ var S10 = {
 }
 var S11 = {
   value: 11,
-  image: "pic/jack_of_spadespng"
+  image: "pic/jack_of_spades.png"
 }
 var S12 = {
   value: 12,
