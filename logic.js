@@ -23,14 +23,17 @@ function dealer() {
 //variabler til at holde spillernes nye kortene
 var newPlayerCards = [];
 var newComputerCards = [];
-
+//function der sætter billeder af kort ind, tager 2 input af spillerkort og computerkort. 
+function showCard(playerCard, computerCard) {
+  document.getElementById('playercardpic').src = playerCard.image;
+  document.getElementById('computercardpic').src = computerCard.image;
+}
 //function der holde værdien af kortene op imod hinanden og assigner point.
 //assigner også de vundne til to nye arrays som så bruges istedet for org. array.
 function getCard() {
   var playerCard = player[0];
   var computerCard = computer[0];
-  document.getElementById('playercardpic').src = playerCard.image;
-  document.getElementById('computercardpic').src = computerCard.image;
+  showCard(playerCard, computerCard);
 }
 function compareCards(){
   if (true) {
